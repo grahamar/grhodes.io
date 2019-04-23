@@ -5,8 +5,8 @@ import s from './index.module.css'
 const name = 'Graham'
 const gradient = {
   idle: {
-    start: '#EC6EAD',
-    stop: '#3494E6',
+    start: '#B200FF',
+    stop: '#00FFC5',
   },
   active: {
     start: '#e23b8e',

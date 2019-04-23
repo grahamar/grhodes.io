@@ -17,6 +17,7 @@
     "disqus-react": "^1.0.5",
     "gatsby-source-medium": "^2.0.6",
     "lodash": "^4.17.5",
+    "polished": "^3.2.0",
     "prismjs": "^1.15.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.3",
@@ -24,6 +25,7 @@
     "react-entypo-icons": "^1.4.1",
     "react-helmet": "^5.2.0",
     "react-obfuscate": "^3.2.0",
+    "rebass": "^3.1.0",
     "styled-components": "^4.1.3",
     "styled-system": "^3.2.1",
     "uuid": "^3.2.1"

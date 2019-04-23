@@ -1,13 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import { Box } from 'rebass'
 import styled, { css, createGlobalStyle } from 'styled-components'
-import { fontSize, space, bgColor } from 'styled-system'
-
-// const LOGO_FONT = 'PT Serif, serif'
-const font = family => `font-family: ${family}`
-
-const LOGO_FONT = font('Roboto, sans-serif')
-const SERIF_FONT = font('Lora, Georgia')
+import { fontSize, space } from 'styled-system'
 
 const theme = (key, fallback) => props =>
   props.theme[key] || (fallback || 'initial')
@@ -23,30 +18,9 @@ const transition = css`
   will-change: color, background;
 `
 
-export const Flex = styled.div`
-  display: flex;
-`
-
-export const Box = styled.div`
-  ${space};
-  ${bgColor};
-`
-
 export const Bullet = styled(props => <span {...props}>&bull;</span>)`
   color: ${theme('bullet')};
   margin: 0 10px;
-`
-
-export const Logo = styled.h1`
-  ${LOGO_FONT};
-  color: ${theme('logoColor', theme('color'))};
-  font-size: 3.5rem;
-  margin: 0;
-  letter-spacing: 0.75px;
-  font-weight: light;
-  color: white;
-  background-clip: text;
-  -webkit-background-clip: text;
 `
 
 export const Tag = styled(Link)`
@@ -93,14 +67,6 @@ export const Content = styled.section`
     margin-bottom: 0;
     padding-top: 1em;
   `)}
-`
-
-export const TagLine = styled.h2`
-  font-family: Proxima Soft, Arial, sans-serif;
-  font-weight: 200;
-  font-size: 4em;
-  color: #1989ea;
-  margin-bottom: 1rem;
 `
 
 export const HeroSection = styled.section`
@@ -191,10 +157,10 @@ export const Post = styled.article`
 `
 
 export const Paragraph = styled.p`
-  ${SERIF_FONT};
   font-size: 1rem;
   line-height: 1.65;
   color: ${theme('color')};
+  max-width: 800px;
   ${space};
 `
 
@@ -318,7 +284,7 @@ export const GlobalStyles = createGlobalStyle`
   p > a:hover,
   li > a:hover,
   strong > a:hover {
-    border-bottom: 1px solid #0087ff;
+    border-bottom: 1px solid #00FFC5;
   }
 
   blockquote {

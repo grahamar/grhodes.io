@@ -1,19 +1,17 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import { Box } from 'rebass'
 import {
   HeroSection,
   Section,
   Content,
-  Logo,
-  Box,
-  TagLine,
   Paragraph,
   SectionBox,
   Tag,
 } from '../styles'
+import Hello from '../components/Hello'
 import Footer from '../components/Footer'
 import Layout from '../components/Layout'
-import GetInTouch from '../components/GetInTouch'
 import Post from '../components/Post'
 
 const skills = [
@@ -43,34 +41,18 @@ export default class IndexPage extends React.Component {
       <Layout>
         <Content>
           <HeroSection>
-            <Logo>Graham Rhodes.</Logo>
-            <Box mt="3.318rem">
-              <TagLine>Software Engineer / Full Stack.</TagLine>
-              <p>
-                Senior Software Engineer from Ireland. Currently working
-                full-time for{' '}
-                <a
-                  target="_blank"
-                  href="https://www.flow.io/"
-                  rel="noopener noreferrer"
-                >
-                  Flow
-                </a>{' '}
-                in Dublin
-              </p>
-              <GetInTouch />
-              <Footer />
-            </Box>
+            <Hello />
+
+            <Footer />
           </HeroSection>
           <Section>
             <SectionBox>
               <h4>About</h4>
               <Paragraph mb={4}>
-                Software engineer based in Dublin, Ireland. Currently at Flow
-                Commerce helping merchants go global. Previously at Zalando,
-                where I helped architect and develop their Fashion Content
-                Platform. Before that I designed and built Gilt Groupe&#39;s
-                cart service to scale for Black Friday sales.
+                Tech lead based in Dublin, Ireland. Currently at Aylien.
+                Previously at Zalando, where I helped architect and develop
+                their Fashion Content Platform. Before that I designed and built
+                Gilt Groupe&#39;s cart service to scale for Black Friday sales.
               </Paragraph>
             </SectionBox>
             <SectionBox>

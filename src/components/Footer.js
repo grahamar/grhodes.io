@@ -1,5 +1,6 @@
 import React from 'react'
-import { Footer, Box } from '../styles'
+import { Box } from 'rebass'
+import { Footer } from '../styles'
 import SocialIcons from './SocialIcons'
 
 export default props => (
