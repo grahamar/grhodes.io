@@ -48,13 +48,6 @@ module.exports = {
         name: 'images',
       },
     },
-    {
-      resolve: `gatsby-source-medium`,
-      options: {
-        username: '@grahamar',
-        limit: 50,
-      },
-    },
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
-}
+};

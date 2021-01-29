@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 
-import s from './index.module.css'
+import s from './index.module.css';
 
-const name = 'Graham'
+const name = 'Graham';
 const gradient = {
   idle: {
     start: '#B200FF',
@@ -12,47 +12,7 @@ const gradient = {
     start: '#e23b8e',
     stop: '#1989ea',
   },
-}
-
-const Twitter = () => (
-  <svg
-    className={s.icon}
-    xmlns="http://www.w3.org/2000/svg"
-    width="37px"
-    height="30px"
-    viewBox="0 0 37 30"
-    version="1.1"
-  >
-    <title>{name}s Twitter Profile</title>
-    <desc>Twitter Icon</desc>
-    <defs>
-      <linearGradient x1="50%" y1="11.3809772%" x2="100%" y2="100%" id="normal">
-        <stop stopColor={gradient.idle.start} offset="0%" />
-        <stop stopColor={gradient.idle.stop} offset="100%" />
-      </linearGradient>
-      <linearGradient
-        x1="50%"
-        y1="0%"
-        x2="85.7919034%"
-        y2="83.046875%"
-        id="hover"
-      >
-        <stop stopColor={gradient.active.start} offset="0%" />
-        <stop stopColor={gradient.active.stop} offset="100%" />
-      </linearGradient>
-    </defs>
-    <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
-      <g transform="translate(-1272.000000, -907.000000)" fill="url(#normal)">
-        <g id="icon" transform="translate(1162.000000, 907.000000)">
-          <path
-            d="M121.531373 30C135.368347 30 142.93532 18.4592328 142.93532 8.45199776 142.93532 8.12405871 142.92872 7.79774385 142.91376 7.47290553 144.38248 6.40403981 145.65936 5.0702832 146.666667 3.55166406 145.318653 4.15453445 143.86812 4.56073 142.346453 4.74396834 143.899507 3.80651448 145.092053 2.32288929 145.654373 0.554587603 144.200613 1.42205357 142.59124 2.05312583 140.877733 2.39287718 139.504933 0.920768981 137.550013 0 135.386533 0 131.231907 0 127.86268 3.39190267 127.86268 7.57286714 127.86268 8.16732127 127.928827 8.74509051 128.057893 9.29967811 121.805933 8.98325606 116.261787 5.96949473 112.552 1.38705962 111.905347 2.50597998 111.533107 3.80651448 111.533107 5.19357411 111.533107 7.82107315 112.86132 10.1405664 114.880773 11.4975047 113.646867 11.4592623 112.487467 11.1178868 111.47356 10.550158 111.471947 10.5817559 111.471947 10.6133538 111.471947 10.6465759 111.471947 14.3148865 114.065453 17.3769306 117.50728 18.0713463 116.87544 18.2443965 116.2106 18.3377137 115.5242 18.3377137 115.039613 18.3377137 114.568227 18.2894309 114.11004 18.201134 115.067627 21.2100227 117.84476 23.3995807 121.13772 23.4612999 118.562547 25.492573 115.31916 26.7031864 111.794467 26.7031864 111.18756 26.7031864 110.58872 26.6681924 110 26.5982045 113.329333 28.7462717 117.282293 30 121.531373 30"
-            id="twitter"
-          />
-        </g>
-      </g>
-    </g>
-  </svg>
-)
+};
 
 const LinkedIn = () => (
   <svg
@@ -92,7 +52,7 @@ const LinkedIn = () => (
       </g>
     </g>
   </svg>
-)
+);
 
 const Github = () => (
   <svg
@@ -132,16 +92,12 @@ const Github = () => (
       </g>
     </g>
   </svg>
-)
+);
 
 class SocialIcons extends React.Component {
   render() {
     return (
       <p>
-        <a href="https://twitter.com/RhodesGraham">
-          <Twitter />
-        </a>
-
         <a href="https://www.linkedin.com/in/rhodesgraham">
           <LinkedIn />
         </a>
@@ -150,7 +106,7 @@ class SocialIcons extends React.Component {
           <Github />
         </a>
       </p>
-    )
+    );
   }
 }
-export default SocialIcons
+export default SocialIcons;
