@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Graham Rhodes',
-    description: 'Software Engineer @ Flow, Dublin',
+    description: 'Software Engineer @ Stripe, Dublin',
   },
   plugins: [
     'gatsby-remark-reading-time',
