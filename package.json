@@ -86,6 +86,7 @@
       "unicorn/filename-case": 0,
       "unicorn/no-process-exit": 0,
       "capitalized-comments": 0,
+      "import/extensions": 0,
       "import/no-unassigned-import": 0,
       "unicorn/prefer-query-selector": 0,
       "react/prop-types": 0,

@@ -1,12 +1,13 @@
-import { useState } from 'react'
+import { useState } from 'react';
 
 // #004b38 - nice mint green
+// #53ffc1
 
 export const themes = {
   minimal: {
     selection: 'rgba(133, 180, 255, 0.4)',
     primary: 'white',
-    background: '#030d30',
+    background: '#000000',
     color: 'white',
     logoColor: 'white',
     logoHoverColor: 'blue',
@@ -26,21 +27,21 @@ export const themes = {
     bullet: '#7b778e',
     inlineCodeColor: 'black',
   },
-}
+};
 
-const useTheme = defaultTheme => {
-  let themeName = defaultTheme || 'minimal'
-  const [theme, setTheme] = useState(themes[themeName] || {})
+const useTheme = (defaultTheme = 'minimal') => {
+  let themeName = defaultTheme;
+  const [theme, setTheme] = useState(themes[themeName] || {});
 
   function changeTheme(newTheme) {
     if (typeof window !== 'undefined' && 'localStorage' in window)
-      localStorage.setItem('theme', newTheme)
+      localStorage.setItem('theme', newTheme);
 
-    setTheme(themes[newTheme])
-    themeName = newTheme
+    setTheme(themes[newTheme]);
+    themeName = newTheme;
   }
 
-  return [theme, changeTheme, themeName]
-}
+  return [theme, changeTheme, themeName];
+};
 
-export default useTheme
+export default useTheme;

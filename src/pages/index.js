@@ -8,10 +8,12 @@ import { HeroSection, Content, SectionBox, Paragraph } from '../styles';
 
 const Stripe = styled.span`
   color: #635bff;
+  font-weight: 600;
 `;
 
 const Zalando = styled.span`
   color: #ff6800;
+  font-weight: 600;
 `;
 
 const IndexPage = () => (
