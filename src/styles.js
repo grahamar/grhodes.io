@@ -1,27 +1,27 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import { Box } from 'rebass'
-import styled, { css, createGlobalStyle } from 'styled-components'
-import { fontSize, space } from 'styled-system'
+import React from 'react';
+import { Link } from 'gatsby';
+import { Box } from 'rebass';
+import styled, { css, createGlobalStyle } from 'styled-components';
+import { fontSize, space } from 'styled-system';
 
-const theme = (key, fallback) => props =>
-  props.theme[key] || (fallback || 'initial')
+const theme = (key, fallback) => (props) =>
+  props.theme[key] || fallback || 'initial';
 
-const isMobile = content => `
+const isMobile = (content) => `
   @media (max-width: 720px) {
     ${content}
   }
-`
+`;
 
 const transition = css`
   transition: color 150ms, background 150ms;
   will-change: color, background;
-`
+`;
 
-export const Bullet = styled(props => <span {...props}>&bull;</span>)`
+export const Bullet = styled((props) => <span {...props}>&bull;</span>)`
   color: ${theme('bullet')};
   margin: 0 10px;
-`
+`;
 
 export const Tag = styled(Link)`
   padding: 5px 12px;
@@ -40,7 +40,7 @@ export const Tag = styled(Link)`
   &:hover {
     background: ${theme('tagHoverBackground')};
   }
-`
+`;
 
 export const Container = styled.div`
   margin: auto;
@@ -49,7 +49,7 @@ export const Container = styled.div`
   ${isMobile(`
     padding: 0 1.5em;
   `)}
-`
+`;
 
 export const Content = styled.section`
   position: relative;
@@ -67,26 +67,26 @@ export const Content = styled.section`
     margin-bottom: 0;
     padding-top: 1em;
   `)}
-`
+`;
 
 export const HeroSection = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: calc(100vh - 1rem);
-`
+  min-height: calc(100vh - 5rem);
+`;
 
 export const Section = styled.section`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding-bottom: 2em;
-`
+`;
 
 export const SectionBox = styled(Box)`
   width: calc(99.99% * 6 / 12 - 1.659rem);
   color: white;
-`
+`;
 
 export const Title = styled.h1`
   color: ${theme('titleColor')};
@@ -120,24 +120,24 @@ export const Title = styled.h1`
       transform: rotate(-1deg);
     }
   }
-`
+`;
 
 export const LineBreak = styled.div.attrs({
   className: 'LineBreak',
 })`
-  width: ${p => (p.width ? `${p.width}px` : '80px')};
+  width: ${(p) => (p.width ? `${p.width}px` : '80px')};
   border: 2px solid ${theme('primary')};
   margin-bottom: 2em;
   ${space};
   transition: width 250ms ease-out;
-`
+`;
 
 export const Timestamp = styled.p`
   font-weight: 500;
   font-size: 15px;
   color: ${theme('descriptionColor')};
   margin-bottom: 1.5em;
-`
+`;
 
 export const Post = styled.article`
   border-bottom: 1px solid ${theme('postBorderColor')};
@@ -154,15 +154,16 @@ export const Post = styled.article`
       border-top: 1px solid #eaeaea;
     }
   `)}
-`
+`;
 
 export const Paragraph = styled.p`
   font-size: 1rem;
   line-height: 1.65;
   color: ${theme('color')};
+  padding-top: 0;
+  margin-top: 0;
   max-width: 800px;
-  ${space};
-`
+`;
 
 export const Description = styled(Paragraph)`
   color: ${theme('descriptionColor')};
@@ -174,14 +175,12 @@ export const Description = styled(Paragraph)`
   ${isMobile(`
     margin-bottom: 1em;
   `)}
-`
+`;
 
 export const Footer = styled.footer`
   position: relative;
   text-align: center;
   color: white;
-  padding: 1em 0;
-  margin-bottom: 0.5em;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -201,7 +200,7 @@ export const Footer = styled.footer`
       margin-left: 0;
     }
   }
-`
+`;
 
 export const GlobalStyles = createGlobalStyle`
   :root {
@@ -299,4 +298,4 @@ export const GlobalStyles = createGlobalStyle`
       padding: 0.5em 1em;
     `)}
   }
-`
+`;

@@ -22,8 +22,7 @@ const IndexPage = () => (
       <HeroSection>
         <Hello />
         <SectionBox>
-          <h4>About</h4>
-          <Paragraph mb={4}>
+          <Paragraph>
             Tech lead based in Dublin, Ireland. Currently at{' '}
             <Stripe>Stripe</Stripe>. Previously at <Zalando>Zalando</Zalando>,
             where I helped architect and develop their Fashion Content Platform.

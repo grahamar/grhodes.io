@@ -44,7 +44,7 @@ p > a,
 li > a,
 strong > a {
   padding: 2px;
-  color: #00FFC5;
+  color: #00ffc5;
   font-weight: 600;
   border-bottom: 1px solid #eee;
 }
@@ -52,7 +52,7 @@ strong > a {
 p > a:hover,
 li > a:hover,
 strong > a:hover {
-  border-bottom: 1px solid #00FFC5;
+  border-bottom: 1px solid #00ffc5;
 }
 
 blockquote {
