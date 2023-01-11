@@ -55,7 +55,7 @@
     "gatsby-remark-prismjs": "^3.2.4",
     "gatsby-remark-reading-time": "^1.0.1",
     "gatsby-source-filesystem": "^2.0.12",
-    "gatsby-transformer-remark": "^2.2.5",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^2.1.9",
     "lint-staged": "^10.5.3",
     "lodash-webpack-plugin": "^0.11.4",
